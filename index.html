@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- OUR SITE TITLE HERE -->
+    <title>Our Audio Player</title>
+    <!-- BOOTSTRAP Responsive Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+  </head>
+  <body>
+
+   
+      <ul>
+          <li><a href="#"><h1>PROJECT</h1></a></li>
+          <li><a href="#"><h1>CODE</h1></a></li>
+          <li><a href="#"><h1>ABOUT</h1></a></li>
+      </ul>
+
+        <div class="form" id="container">
+            <div id="audio-image">
+                <img class="cover" />
+            </div>
+            <div id="audio-player">
+                <div id="audio-info">
+                    <span class="artist"></span> - <span class="title"></span>
+                </div>
+                 <input id="volume" type="range" min="0" max="10" value="5" />
+                 <br>
+                 <div id="controllerBox">
+                 <span>
+                    <button class="buttons" id="prev"></button>
+                    <button class="buttons" id="play"></button>
+                    <button class="buttons" id="pause"></button>
+                    <button class="buttons" id="next"></button>
+                    </span>
+                 </div>
+                 <div class="clearfix"></div>
+                 <div id="tracker">
+                    <div id="progressBar">
+                        <span id="progress"></span>
+                    </div>
+                    <span id="duration"></span>
+                 </div>
+                 <div class="clearfix"></div>
+                 <ul id="playlist" class="hidden">
+                    <li song="audioA.mp3" cover="cover1.jpg" artist="Part I">"Title"</li>
+                    <li song="audioB.mp3" cover="cover1.jpg" artist="Part II">"Title"</li>
+                    <li song="audioC.mp3" cover="cover1.jpg" artist="Part III">"Title"</li>
+                </ul>		
+            </div>
+        </div>
+    
+    <!-- LOCAL Javascript -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- BOOTSTRAP Javascript (jQuery, Popper.js,Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
